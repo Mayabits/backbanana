@@ -3,7 +3,7 @@ var router = express.Router();
 
 //CONEXION A BBDD MONGODB USANDO MONGOOSE npm install 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/banana');
+mongoose.connect('mongodb://192.168.99.100:27017/banana');
 var db = mongoose.connection;
 var conectado = false;
 var User = require("../models/user");// CON MONGOOSE ES REQUERIO SIEMPRE TENER UNA COLECCION PARA CREAR LA BASE DE DATOS
